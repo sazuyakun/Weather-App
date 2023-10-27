@@ -29,9 +29,6 @@ async function checkweather(city){
     else if(data.weather[0].main == "Mist"){
         weatherIcon.attr("src", "images/mist.png")
     }
-    else{
-        weatherIcon.attr("src", "images/snow.png")
-    }
 }
 
 checkweather("berlin")
