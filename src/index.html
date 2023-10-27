@@ -7,19 +7,33 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-slate-900 flex justify-center items-center h-screen">
-    <div class="card flex flex-col items-center bg-gradient-to-tl from-red-500 to-yellow-400 rounded-lg p-5 px-7 text-white
+    <div class="card bg-gradient-to-tl from-red-500 to-yellow-400 rounded-lg p-5 px-7 text-white
     w-2/5 ">
-        <div class="search flex justify-end gap-4 items-center ">
-            <input class="rounded-2xl p-3 w-56 border-0 text-gray-460" type="text" placeholder="Enter City Name" spellcheck="false">
-            <button class=""><img class="h-10 transition-all ease-out duration-300 hover:h-12 " src="images/search.png" alt=""></button>
+        <div class="search flex justify-between items-center gap-2 px-7 ">
+            <input class="rounded-2xl p-3 w-4/5 border-0 text-gray-600" type="text" placeholder="Enter City Name" spellcheck="false">
+            <button class=""><img class="h-10 pr-3 transition-all ease-out duration-300 hover:h-12 " src="images/search.png" alt=""></button>
         </div>
 
-        <div class="weather">
+        <div class="weather flex flex-col justify-center items-center">
             <img src="images/rain.png" alt="">
-            <h1 class="temp">22°C</h1>
-            <h2 class="city">New York</h1>
+            <h1 class="temp text-4xl">22°C</h1>
+            <h2 class="city font-bold">New York</h1>
+            <div class="details flex flex-col md:flex-row items-center justify-center p-5">
+                <img class="w-7 h-7" src="images/humidity.png" alt="">
+                <div class="flex flex-col justify-center items-center md:items-start  md:pr-7 md:px-3">
+                    <p>Humidity</p>
+                    <p class="humidity">50%</p>
+                </div>
+                <img class="w-7 h-7"src="images/wind.png" alt="">
+                <div class="flex flex-col justify-center items-center md:items-start md:px-3">
+                    <p>Wind</p>
+                    <p class="wind">15 km/h</p>
+                </div>
+            </div>
         </div>
     </div>
   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
