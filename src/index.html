@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
   <title>Weather App</title>
+  <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-slate-900 flex justify-center items-center h-screen">
+    <div class="card flex flex-col items-center bg-gradient-to-tl from-red-500 to-yellow-400 rounded-lg p-5 px-7 text-white
+    w-2/5 ">
+        <div class="search flex justify-end gap-4 items-center ">
+            <input class="rounded-2xl p-3 w-56 border-0 text-gray-460" type="text" placeholder="Enter City Name" spellcheck="false">
+            <button class=""><img class="h-10 transition-all ease-out duration-300 hover:h-12 " src="images/search.png" alt=""></button>
+        </div>
+
+        <div class="weather">
+            <img src="images/rain.png" alt="">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h1>
+        </div>
+    </div>
+  
 </body>
 </html>
